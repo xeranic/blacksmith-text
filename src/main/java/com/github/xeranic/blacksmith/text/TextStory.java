@@ -10,4 +10,14 @@ public interface TextStory {
     
     void removeText(int offset, int length);
     
+    int getBlockCount();
+    
+    int getBlockIndex(TextBlock block);
+    
+    TextBlock getBlock(int index);
+    
+    int getBlockIndexByOffset(int offset);
+    
+    TextBlock getBlockByOffset(int offset);
+    
 }
